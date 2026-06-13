@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" pages="11">
   <diagram id="v_kNf8dqUISeuotvsaXh" name="Data Model">
-    <mxGraphModel dx="6663" dy="2567" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="5854" dy="1810" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -842,6 +842,24 @@
             <mxPoint x="-2279" y="-368" as="sourcePoint" />
             <mxPoint x="-2173" y="-280" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="tSYZCO6-I3AWXYktbjRw-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="PeripheralManager" vertex="1">
+          <mxGeometry height="138" width="360" x="-3320" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="tSYZCO6-I3AWXYktbjRw-2" parent="tSYZCO6-I3AWXYktbjRw-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ driverMap: Map&amp;lt;AbstractPeripheral*, AbstractDriver*&amp;gt;" vertex="1">
+          <mxGeometry height="26" width="360" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="tSYZCO6-I3AWXYktbjRw-7" parent="tSYZCO6-I3AWXYktbjRw-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ clientMap: Map&amp;lt;AbstractPeripheral*, AbstractClient*&amp;gt;" vertex="1">
+          <mxGeometry height="26" width="360" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="tSYZCO6-I3AWXYktbjRw-3" parent="tSYZCO6-I3AWXYktbjRw-1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="360" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="tSYZCO6-I3AWXYktbjRw-4" parent="tSYZCO6-I3AWXYktbjRw-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ getDriver(AbstractPeripheral*): PeripheralDriver*" vertex="1">
+          <mxGeometry height="26" width="360" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="tSYZCO6-I3AWXYktbjRw-5" parent="tSYZCO6-I3AWXYktbjRw-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ getClient(AbstractPeripheral*): AbstractClient*" vertex="1">
+          <mxGeometry height="26" width="360" y="112" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
